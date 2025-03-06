@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    alert("Contact us here! THANK YOU");
+   
+});
+function toggleForm() {
+    let form = document.getElementById("contact-form");
+    if (form.style.display === "none") {
+        form.style.display = "block";
+    } else {
+        form.style.display = "none";
+    }
+ }
+    </script>
+    <style>
+        body {font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://t3.ftcdn.net/jpg/02/90/89/76/360_F_290897614_7RdAsk2GmumcGWZ2qklmV74hKlNmznSx.jpg');
+    background-size: cover; /* Make image fit the screen */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keeps the background still when scrolling */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Price List</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Get in Touch</h2>
+        <p>Click the button bellow to access all our handles</p>
+        
+    <button onclick="toggleForm()">Contact Us</button>
+    <div id="contact-form" style="display: none;">
+        <form>
+            <p><input type="text" placeholder="Enter Name"required></p>
+            <p><input type="email" placeholder=" Email"></p>
+            <p><textarea placeholder="Your Message"></textarea></p>
+            <button type="submit">Send</button>
+        </form>
+        <h3>Connect With Us</h3>
+<a href="https://www.facebook.com/YourPage" target="_blank">
+    <i class="fab fa-facebook fa-2x"></i>
+</a>
+<a href="https://www.twitter.com/YourHandle" target="_blank">
+    <i class="fab fa-twitter fa-2x"></i>
+</a>
+<a href="https://www.instagram.com/YourProfile" target="_blank">
+    <i class="fab fa-instagram fa-2x"></i>
+</a>
+<a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+    <i class="fab fa-linkedin fa-2x"></i>
+</a>
+<P><B>Call US: </B>0704225571</P>
+    </main>
+    <footer>
+        <p>&copy; <b>2025 Juxx Laptop Stores.</b> All rights reserved.</p>
+    </footer>
+</body>
+</html>

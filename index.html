@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Juxx STORES</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script>  
+document.addEventListener("DOMContentLoaded", function() {
+    alert("Welcome at Juxx Stores!");
+   
+});
+
+function toggleFAQ(faqID) {
+    let answer = document.getElementById(faqID);
+    answer.style.display = answer.style.display === "none" ? "block" : "none";
+}
+
+    </script>
+    <style>
+        body {font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+    width: 100vw;
+    background-image: url('https://t3.ftcdn.net/jpg/02/90/89/76/360_F_290897614_7RdAsk2GmumcGWZ2qklmV74hKlNmznSx.jpg'); /* Replace with your image */
+    background-size: cover; /* Make image fit the screen */
+    background-position: center; /* Center the image */
+    background-attachment: scroll; /* Keeps the background still when scrolling */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    text-align: center;
+        }
+        h1 {
+           color: rgb(219, 122, 30);
+           font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h3 {
+    cursor: pointer;
+    color: rgb(255, 123, 0);
+}nav ul {
+    list-style-type: none;  /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center horizontally */
+    gap: 15px; /* Space between links */
+}
+
+nav ul li {
+    display: inline; /* Ensure items are inline */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(209, 11, 28); /* Adjust link color */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: orange; /* Change color on hover */
+}
+
+header {
+    background: #3806ac;
+    color: rgb(71, 15, 226);
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    background: #080bb6;
+    color: rgb(173, 11, 11);
+    padding: 10px;
+}
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>JUXX Laptop Stores</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Juxx specials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <h2>Discover Amazing quality Laptops</h2>
+        <p>Explore a wide range of quality laptops that meet all your needs at the best prices.</p>
+        <p>From students', business and entrepreneurs, media specialists, scientists meteorologists and many more</p>
+        <p>We got you all covered with various laptop specifications to boost your productivities.</p>
+        <p>To access what we have in store for you, click <a href="products.html">laptops</a> to explore <b>magical laptops</b></p>
+        <img src="https://www.techyshop.co.ke/wp-content/uploads/2021/10/Laptop-For-Sale-in-Nairobi-1.png" alt="Product Banner"width="400"height="300">
+        <p>We also have quality accessories to better your experience with us.</p>
+        <p>Depending on the laptop purchase, you are guaranteed of some free accessories</p>
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/1/SM/GS/DW/44069440/acce.png"alt="Laptop accesories"width="500"height="300">
+       <p>Get to know the frequently asked questions<b>(FAQs)</b></p>
+        <div>
+            <h3 onclick="toggleFAQ('faq1')">What is your return policy? ⬇</h3>
+            <p id="faq1" style="display: none;">We accept returns within 60 days from day 1 of purchase.</p>
+        </div>
+        
+        <div>
+            <h3 onclick="toggleFAQ('faq2')">Do you ship worldwide? ⬇</h3>
+            <p id="faq2" style="display: none;">Yes, we ship globally.</p>
+        </div>
+        
+    </main>
+</div>
+
+    <footer>
+        <p>&copy; <b>2025 Juxx Laptop Stores.</b> All rights reserved.</p>
+    </footer>
+</body>
+</html>
